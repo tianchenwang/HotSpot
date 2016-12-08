@@ -9,15 +9,15 @@
 
 #SUPERLU: [0-1]
 ifndef SUPERLU
-SUPERLU = 1
+SUPERLU = 0
 endif
 
 ifeq ($(SUPERLU), 1)
 #Super LU
-SuperLUroot	= /home/johann/code/SuperLU_5.2.1
-SUPERLULIB 	= $(SuperLUroot)/build/SRC/libsuperlu.a
+SuperLUroot	= /usr/lib/x86_64-linux-gnu
+SUPERLULIB 	= $(SuperLUroot)/libsuperlu.a
 BLASLIB    	= -L $(SuperLUroot) -lblas
-SLU_HEADER  = $(SuperLUroot)/SRC
+SLU_HEADER  = /usr/include/superlu
 
 MATHACCEL	= none
 INCDIR		= $(SLU_HEADER)
@@ -78,7 +78,7 @@ OFLAGS		= -xO4 -erroff=badargtypel2w
 endif	# DEBUG = 2
 endif	# DEBUG = 1
 else	# MATHACCEL != sun	
-CC 			= clang++
+CC 			= g++
 ifeq ($(DEBUG), 1)
 OFLAGS		= -O0 -ggdb -Wall
 else
