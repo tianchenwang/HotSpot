@@ -24,28 +24,28 @@
 # Layer 0: Silicon
 0
 Y
-Y
+N
 1.75e6
 0.01
-0.00015
+8.0e-04
 layer0.flp
 
 # Layer 1: thermal interface material (TIM)
 1
 Y
-N
+Y
 4e6
 0.25
-2.0e-05
-10percent_TIM.flp
+1.0e-05
+heatTIM.flp
 
 # Layer 2: Silicon
 2
 Y
-Y
+N
 1.75e6
 0.01
-0.00015
+8.0e-05
 layer2.flp
 
 # Layer 3: thermal interface material (TIM)
@@ -54,6 +54,6 @@ Y
 N
 4e6
 0.25
-2.0e-05
+1.0e-05
 TIM.flp
 

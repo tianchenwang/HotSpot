@@ -421,8 +421,11 @@ int main(int argc, char **argv)
 
   /* names of functional units	*/
   names = alloc_names(MAX_UNITS, STR_SIZE);
-  if(read_names(pin, names) != n)
+  if(read_names(pin, names) != n){
+    int m = read_names(pin, names);
+    printf("read_names(pin, names): %d, n: %d \n",m, n);
     fatal("no. of units in floorplan and trace file differ\n");
+  }
 
   /* header line of temperature trace	*/
   if (do_transient)
