@@ -37,7 +37,7 @@ Y
 N
 1200
 40
-0.002
+0.003
 layerPCB.flp
 
 # PCB Silicon
@@ -65,7 +65,7 @@ Y
 4e6
 0.023
 1.0e-05
-heatTSV.flp
+heatTSV1.flp
 
 # upper Silicon
 5
@@ -76,8 +76,62 @@ N
 8.0e-05
 layer2.flp
 
-# upper thermal interface material (TIM)
+# TSV layer
 6
+Y
+Y
+4e6
+0.023
+1.0e-05
+heatTSV2.flp
+
+# upper Silicon
+7
+Y
+N
+1.75e6
+0.25
+8.0e-05
+layer2.flp
+
+# TSV layer
+8
+Y
+Y
+4e6
+0.023
+1.0e-05
+heatTSV3.flp
+
+# upper Silicon
+9
+Y
+N
+1.75e6
+0.25
+8.0e-05
+layer2.flp
+
+# TSV layer
+10
+Y
+Y
+4e6
+0.023
+1.0e-05
+heatTSV4.flp
+
+# upper Silicon
+11
+Y
+N
+1.75e6
+0.25
+8.0e-05
+layer2.flp
+
+# upper thermal interface material (TIM)
+12
 Y
 N
 4e6
@@ -86,7 +140,7 @@ N
 TIM.flp
 
 # shield
-7
+13
 Y
 N
 1.35e6
@@ -95,16 +149,16 @@ N
 layerPCB.flp
 
 # air ? copper
-8
+14
 Y
 N
 1200
 40
-0.002
+0.003
 layerPCB.flp
 
 # Display
-9
+15
 Y
 N
 1.2e6
