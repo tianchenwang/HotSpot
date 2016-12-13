@@ -645,8 +645,11 @@ void populate_layers_grid(grid_model_t *model, flp_t *flp_default)
   if (!model->config.model_secondary) {
       if (model->has_lcf) {
           model->n_layers = count_significant_lines(fp);
-          if (model->n_layers % LCF_NPARAMS)
+          if (model->n_layers % LCF_NPARAMS){
+            int t = model->n_layers;
+            printf("model->n_layers: %d \n", t);
             fatal("wrong no. of lines in layer file\n");
+          }
           model->n_layers /= LCF_NPARAMS;
           /* default no. of layers when lcf file is not specified	*/	
       } else
@@ -654,8 +657,11 @@ void populate_layers_grid(grid_model_t *model, flp_t *flp_default)
   } else {
       if (model->has_lcf) {
           model->n_layers = count_significant_lines(fp);
-          if (model->n_layers % LCF_NPARAMS)
+          if (model->n_layers % LCF_NPARAMS){
+            int t = model->n_layers;
+            printf("model->n_layers: %d \n", t);
             fatal("wrong no. of lines in layer file\n");
+          }
           model->n_layers /= LCF_NPARAMS;
           /* default no. of layers when lcf file is not specified	*/	
       } else
