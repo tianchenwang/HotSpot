@@ -4,4 +4,4 @@
 # comment lines begin with a '#' 
 # comments and empty lines are ignored
 
-layerPCB	0.0010000	0.0010000	0.000000	0.000000
+layerPCB	0.010000	0.010000	0.000000	0.000000
